@@ -104,6 +104,7 @@ cards card suit {
     display: block;
     line-height: 1;
     text-align: left;
+    text-transform: uppercase;
 }
 cards card rank {
 }
