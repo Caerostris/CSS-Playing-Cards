@@ -21,9 +21,9 @@ How to use it
 
 ### Surrounding container
 
-    <div class="playingCards [fourColours|faceImages|simpleCards|inText|rotateHand]">
+    <cards class="[fourColours|faceImages|simpleCards|inText|rotateHand]">
         ...
-    </div>
+    </cards>
 
 There needs to be a surrounding container with the class "playingCards" around all the cards. That container can also have other classes which serve as **configuration options**:
 
@@ -35,31 +35,31 @@ There needs to be a surrounding container with the class "playingCards" around a
 
 ### The back of a card
 
-    <[element] class="card back">*</[element]>
+    <card class="back">*</card>
 
 To make the cards smaller or bigger, just change the font-size in the main "card" class in cards.css (search for "@change").
 
 ### The front of a card
 
-    <[element] class="card rank-[2|3|4|5|6|7|8|9|10|j|q|k|a] [diams|hearts|spades|clubs]">
-        <[element] class="rank">[2|3|4|5|6|7|8|9|10|J|Q|K|A]</[element]>
-        <[element] class="suit">&[diams|hearts|spades|clubs];</[element]>
-    </[element]>
+    <card class="rank-[2|3|4|5|6|7|8|9|10|j|q|k|a] [diams|hearts|spades|clubs]">
+        <rank>[2|3|4|5|6|7|8|9|10|J|Q|K|A]</rank>
+        <suit>&[diams|hearts|spades|clubs];</suit>
+    </card>
 
-Depending on the context, the main card element should either be an **a** (for selecting single cards), a **label** (for selecting multiple cards), an **abbr** (for making a card more accessible with a title), a **div** or a **span** (for pure representation or played cards), e.g.
+Depending on the context, the main card element should either be an **a** (for selecting single cards), or a **label** (for selecting multiple cards), e.g.
 
-    <[a|label|abbr|div|span] class="card rank-a clubs" [href=""] [title=""]>
-        <span class="rank">A</span>
-        <span class="suit">&clubs;</span>
+    <[a|label] class="card rank-a clubs" [href=""] [title=""]>
+        <rank>A</rank>
+        <suit>&clubs;</suit>
         [<input type="checkbox" [...] />] <!-- if in label -->
-    </[a|label|abbr|div|span]>
+    </[a|label]>
 
 ### A joker
 
-    <[element] class="card joker [big|little]">
-        <[element] class="rank">[+|-]</[element]>
-        <[element] class="suit">Joker</[element]>
-    </[element]>
+    <card class="joker [big|little]">
+        <rank>[+|-]</rank>
+        <suit>Joker</suit>
+    </card>
 
 ### Different hands
 
