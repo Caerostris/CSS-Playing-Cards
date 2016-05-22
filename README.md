@@ -12,8 +12,6 @@ Contents
 --------
 
 * **cards.css** is the main part and provides the styles for the cards
-* **cards-ie.css** is a tiny fix for IE < 9 to make a simple version work
-* **cards-ie9.css** is a fix for IE9
 * **examples.html** provides some example HTML
 * **README.md** is this file
 * **faces/** contains images for the faces
@@ -30,7 +28,7 @@ How to use it
 There needs to be a surrounding container with the class "playingCards" around all the cards. That container can also have other classes which serve as **configuration options**:
 
 * **fourColours**: Switches the default two colour deck with a four colour deck. (The colours of the German four colour deck will be different.)
-* **faceImages**: Switches the default dingbat symbols for faces with images. *Note: Depending on the size of the card, you might need to adjust the image positioning of the faces in cards.css and the font-size in cards-ie9.css (search for "@change").*
+* **faceImages**: Switches the default dingbat symbols for faces with images. *Note: Depending on the size of the card, you might need to adjust the image positioning of the faces in cards.css.*
 * **simpleCards**: Switches the default multiple suits to one simple single big suit in the middle.
 * **inText**: Switches the size to something small enough to fit into normal text and also removes the inner bits.
 * **rotateHand**: Switches the hand to rotate and fan in a semi circle.
@@ -81,8 +79,8 @@ Depending on the context, the main card element should either be an **a** (for s
 Requirements
 ------------
 
-The CSS is only intended to work in **modern browsers** (Firefox 3.6+, Opera 10+, Chrome, Safari, IE9).
-To make a basic version work in IE8, you need the provided **cards-ie.css**. And IE9 also needs a little fix, as provided in **cards-ie9.css**.
+The CSS is only intended to work in **modern browsers** (Firefox 3.6+, Opera 10+, Chrome, Safari).  
+(Edit: I wouldn't call Firefox 3.6+ modern anymore, but oh well...)
 
 Credits
 -------
